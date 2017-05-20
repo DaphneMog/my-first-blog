@@ -7,6 +7,15 @@
 		<h1>Daphnes Blog </h1>
 	</div>
 		<br />
+	
+		{% for post in posts %}
+    	
+    <div>
+        <p>published: {{ post.published_date }}</p>
+       	<h1><a href="">{{ post.title }}</a></h1>
+       	<p>{{ post.text|linebreaksbr }}</p>
+    </div>
+		{% endfor %}
 	<div>
 		<p>Published: 20.05.2016</p>
 		<p>"Onze resultaten laten zien dat er een verband gevonden is tussen een voedingspatroon met veel proteïnen in de jeugd en een hoger BMI", aldus een van de onderzoekers. "Vervolgonderzoek zal uit moeten wijzen in welke mate proteïnen ingenomen dienen te worden om gezond te blijven."
