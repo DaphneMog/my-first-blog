@@ -1,9 +1,10 @@
 h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
+    font-family: 'Barrio', cursive;;
 }
 body {
     padding-left: 25px;
+    font-family: 'Barrio', cursive;
 }
 .page-header {
     background-color: #ff9400;
@@ -22,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Barrio', cursive;
 }
 
 .date {
