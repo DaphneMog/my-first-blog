@@ -1,20 +1,24 @@
-<!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head>
-	<script src="js.js"></script>
-<link rel="stylesheet" type="text/css" href="blog.css">
+<script src="js.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+<style>
+
+</style>
+	<title>Daphne Moguella</title>
 </head>
-	<body>
+<body>
 	<div style="background-color: white">
 	<ul>
-		<li><a href="post_list.html">Home</a></li>
+		<li><a href="{% url 'post_list' %}">Home</a></li>
 		<li class="dropdown">
 			<a href"javascript:void(0)"
 	class="dropbtn">Blog</a>
 			<div class="dropdown-content">
-				<a href="A.html">A</a>
-				<a href="B.html">B</a>
-				<a href="C.html">C</a>			
+				<a href="{% url 'a_view' %}">A</a>
+				<a href="{% url 'b_view' %}">B</a>
+				<a href="{% url 'c_view' %}">C</a>			
 			</div>
 		<li><a href="about_me.html">About me</a></li>
 		<li><a href="contact.html">Contact</a></li>
