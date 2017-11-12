@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^A', views.a, name='a_view'),
     url(r'^B', views.b, name='b_view'),
     url(r'^C', views.c, name='c_view'),
+    url(r'^About', views.about, name='about_view'),
 ]

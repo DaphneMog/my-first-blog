@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<html>
+<head>
+<script src="js.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+<style>
+
+</style>
+	<title>Daphne Moguella</title>
+</head>
+<body>
+	<div style="background-color: black">
+	<ul>
+		<li><a href="{% url 'post_list' %}">Home</a></li>
+		<li class="dropdown">
+			<a href"javascript:void(0)"
+	class="dropbtn">Blog</a>
+			<div class="dropdown-content">
+				<a href="{% url 'a_view' %}">A</a>
+				<a href="{% url 'b_view' %}">B</a>
+				<a href="{% url 'c_view' %}">C</a>			
+			</div>
+		<li><a href="{% url 'about_view' %} ">About me</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	<div class="search" style="text-align: right; ">			
+		<form action="http://daphnemog.pythonanywhere.com/">
+		<input type="text" name="search" placeholder="search..." style="width: 150px" />
+		<input type="submit" value= "Go">
+		</form>
+	</div>
+	<div>
+		<p>Test 1.2.3.4.</p>
+	</div>
+
+</body>
+</html>
