@@ -16,9 +16,9 @@
 			<a href"javascript:void(0)"
 	class="dropbtn">Blog</a>
 			<div class="dropdown-content">
-				<a href="{% url 'a_view' %}">A</a>
-				<a href="{% url 'b_view' %}">B</a>
-				<a href="{% url 'c_view' %}">C</a>			
+				<a href="{% url 'a_view' %}">Blog</a>
+				<a href="{% url 'b_view' %}">Foto's</a>
+				<a href="{% url 'c_view' %}">Extra</a>			
 			</div>
 		<li><a href="{% url 'about_view' %}">About me</a></li>
 		<li><a href="contact.html">Contact</a></li>
@@ -29,14 +29,18 @@
 		</form>
 	</div>
 	</ul>
-	<div style="background-color:  green">
-		<h1>Blog</h1>
-	</div>
 	<div>
+		<h1 id="A_Title">Blog</h1>
+	</div>
+	<br>
+	<div >
 		{% for post in posts %}
-			<h3> {{ post.title }}</h3>
+			<div id="posts">
+			<h2 id="post_title"> {{ post.title }}</h2>
 			<p> {{ post.text }}</p>
 			<p> {{ post.published_date }} </p>
+			<br>
+			</div>
 		{% endfor %}
 	</div>
 

@@ -69,4 +69,39 @@ li.dropdown{
     height: 50%;
    }
 
+ #post_title{
+    background-color: lightblue;
+     text-align: center;
+ }
+ #posts{
+    border-style: double;
+    border-width:thick;
+    border-color: lightgray;
+ }
+ #A_title{
+    border-style: double;
+    border-width:thick;
+    border-color: lightgray;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    
+ }
+  #B_title{
+    border-style: double;
+    border-width:thick;
+    border-color: lightgray;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    
+ }
+  #C_title{
+    border-style: double;
+    border-width:thick;
+    border-color: lightgray;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    
  }
