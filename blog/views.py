@@ -17,7 +17,7 @@ def b(request):
 def c(request):
 	return render(request, 'blog/C.html', {})
 
-def about_me(request):
+def about(request):
 	return render(request, 'blog/about_me.html', {})
 
 	
