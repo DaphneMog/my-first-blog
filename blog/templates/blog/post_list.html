@@ -7,19 +7,13 @@
 </style>
     <title>Daphne Moguella</title>
 </head>
-<body>
-    <div style="background-color: white">
-    <ul>
-        <li><a href="{% url 'post_list' %}">Home</a></li>
-        <li class="dropdown">
-            <a href"{% static 'javascript:void(0)' %} " class="dropbtn">Blog</a>
-            <div class="dropdown-content">
-                <a href="{% url 'a_view' %}">Blog</a>
-                <a href="{% url 'b_view' %}">Foto's</a>
-                <a href="{% url 'c_view' %}">Extra</a>          
-            </div>
-        <li><a href="{% url 'about_view' %}">About me</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<body class="home">
+    <div style="background-color: rgba(255,255,255,0.35);">
+    <ul >
+        <li ><a class="balk_home" href="{% url 'post_list' %}">Home</a></li>
+        <li><a class="balk_home" href="{% url 'a_view' %}">Blog</a></li>   
+        <li> <a class="balk_home" href="{% url 'b_view' %}">Foto's</a></li>
+        <li> <a class="balk_home" href="{% url 'c_view' %}">Extra</a></li>
     <div class="search" style="text-align: right; ">            
         <form action="http://daphnemoguella.pythonanywhere.com/">
         <input type="text" name="search" placeholder="search..." style="width: 150px" />
@@ -28,12 +22,16 @@
     </div>
     </ul>
     </div>
-    <div class="banner" style="text-align: center; background-color: black;"><img src="{% static 'Images/Banner.jpeg' %}" style="width:944px;"/>
-    <br>
-    <div class="nav3" style="height:0px;">
-    <a href="{% url 'a_view' %}" class="icons"><img src="{% static 'Images/A.png' %}" style="width: 30%"></a>
-    <a href="B.html" class="icons"><img src="{% static 'Images/B.png' %}" style="width: 30%"></a>
-    <a href="B.html" class="icons"><img src="{% static 'Images/C.png' %}" style="width: 30%"></a>
+    <div class="home-video">
+        <video id="home-bgd-video" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+            <source src="{% static 'Images/Background.mp4' %}" type="video/mp4" >
+            Your browser does not suport this video. I'm sorry. :-(
+        </video>
     </div>
+    <div class="home-content">
+        <h1> Daphne Moguella</h1>
+    </div>
+
+  
 </body>
 </html>

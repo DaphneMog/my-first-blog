@@ -8,27 +8,19 @@
 </style>
 	<title>Daphne Moguella</title>
 </head>
-<body>
-	<div style="background-color: white">
-	<ul>
-		<li><a href="{% url 'post_list' %}">Home</a></li>
-		<li class="dropdown">
-			<a href"javascript:void(0)"
-	class="dropbtn">Blog</a>
-			<div class="dropdown-content">
-				<a href="{% url 'a_view' %}">Blog</a>
-				<a href="{% url 'b_view' %}">Foto's</a>
-				<a href="{% url 'c_view' %}">Extra</a>			
-			</div>
-		<li><a href="{% url 'about_view' %}">About me</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	<div class="search" style="text-align: right; ">			
-		<form action="http://daphnemog.pythonanywhere.com/">
-		<input type="text" name="search" placeholder="search..." style="width: 150px" />
-		<input type="submit" value= "Go">
-		</form>
-	</div>
-	</ul>
+<body class="home">
+    <div style="background-color: rgba(255,255,255,0.35);">
+    <ul>
+        <li><a class="balk_zwart" href="{% url 'post_list' %}" id="Bar-home">Home</a></li>
+        <li><a class="balk_zwart" href="{% url 'a_view' %}">Blog</a></li>   
+        <li> <a class="balk_zwart" href="{% url 'b_view' %}">Foto's</a></li>
+        <li> <a class="balk_zwart" href="{% url 'c_view' %}">Extra</a></li>
+    <div class="search" style="text-align: right; ">            
+        <form action="http://daphnemoguella.pythonanywhere.com/">
+        <input type="text" name="search" placeholder="search..." style="width: 150px" />
+        <input type="submit" value= "Go">
+        </form>
+    </div>
 	<div>
 		<h1 id="A_Title">Mijn reis naar Uruguay</h1>
 	</div>
@@ -38,7 +30,7 @@
 			<div id="posts">
 			<h2 id="post_title"> {{ post.title }}</h2>
 			<p> {{ post.text }}</p>
-			<br>
+			<p>{{ post.text|linebreaksbr }}</p>
 			<p> {{ post.published_date }} </p>
 			</div>
 			<br>
